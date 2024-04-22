@@ -26,8 +26,8 @@ namespace HanoiTowerGame
             N = n;
            Towers = new Tower[3]; //create an array of 3 towers
            Towers[0] = new Tower(new Stack<int>(Enumerable.Range(1, n).Reverse()), n,"A"); // when tower A with n number of discs
-           Towers[1] = new Tower(new Stack<int>(), 0, "B"); // when tower B is empty
-           Towers[2] = new Tower(new Stack<int>(), 0, "C"); // when tower C is empty
+           Towers[1] = new Tower(new Stack<int>(), n, "B"); // when tower B is empty
+           Towers[2] = new Tower(new Stack<int>(), n, "C"); // when tower C is empty
 
         }
 
